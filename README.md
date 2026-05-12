@@ -4,6 +4,7 @@ En este repositorio, incluiremos distintos ejemplos de proyectos generados con I
 
 *Nota: para escribir en diferentes formatos en el archivo README.md e insertar imágenes y links, lo hice con la ayuda de [esta documentación](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). Espero que les sirva!*
 
+
 ## 💡 Definición de la problemática
 Para introducirnos en la problemática a tratar en el proyecto, es importante informarnos al respecto. Por ejemplo, si nuestra temática fuera *Contaminación del agua*, podríamos anotar algo así:
    - Se estima que para el 2050, habrá en el océano más plástico que peces.
