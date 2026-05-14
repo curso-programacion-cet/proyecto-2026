@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planeta Azul</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="overlay">
+            <h1>Planeta Azul</h1>
+            <p>
+                Cada gota cuenta para construir un futuro sostenible 💧
+            </p>
+            <a href="#consejos" class="hero-button">
+                Descubrí cómo ayudar
+            </a>
+        </div>
+    </header>
+
+
+    <section id="importancia">
+        <h2>El agua y su impacto</h2>
+        <p>
+            El agua es uno de los recursos más importantes para la vida en la Tierra.
+            Sin embargo, millones de personas enfrentan problemas de acceso al agua potable.
+            Reducir el desperdicio ayuda a proteger los ecosistemas y asegurar recursos para el futuro.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>70%</h3>
+                <p>del planeta está cubierto por agua.</p>
+            </div>
+            <div class="card">
+                <h3>3%</h3>
+                <p>es agua dulce apta para consumo.</p>
+            </div>
+            <div class="card">
+                <h3>+2B</h3>
+                <p>de personas tienen acceso limitado al agua.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="consejos">
+        <h2>Hábitos que hacen la diferencia</h2>
+        <p>
+            Con pequeños cambios diarios podés ahorrar muchísima agua sin perder comodidad.
+        </p>
+
+        <ul class="tips">
+            <li>🌱 Cerrá la canilla mientras te cepillás los dientes.</li>
+            <li>🚿 Reducí algunos minutos de ducha.</li>
+            <li>🧺 Usá el lavarropas con carga completa.</li>
+            <li>💧 Repará pérdidas y filtraciones.</li>
+            <li>🌧️ Reutilizá agua de lluvia para las plantas.</li>
+        </ul>
+
+
+        <h3>Calculá tu ahorro de agua</h3>
+
+        <p>
+            Completá los datos y descubrí cuántos litros podrías ahorrar cada día.
+        </p>
+
+
+        <div class="calculadora">
+            <label for="cepillar-dientes">
+                Cepillarte los dientes (veces al día):
+            </label>
+
+            <input type="number" id="cepillar-dientes" min="0" value="0">
+
+            <label for="lavar-platos">
+                Lavar platos (veces al día):
+            </label>
+
+            <input type="number" id="lavar-platos" min="0" value="0">
+
+            <label for="ducha">
+                Duchas (minutos al día):
+            </label>
+
+            <input type="number" id="ducha" min="0" value="0">
+
+            <button onclick="calcularAhorro()">
+                Calcular ahorro
+            </button>
+
+
+            <p id="resultado" style="display: none;">
+                Podrías ahorrar
+                <span id="ahorro">0</span>
+                litros de agua por día 💦
+            </p>
+        </div>
+    </section>
+
+
+    <section id="recursos">
+        <h2>Participá y aprendé más</h2>
+        <p>
+            Informarte y compartir hábitos sostenibles ayuda a generar un impacto positivo.
+        </p>
+
+        <div class="resource-box">
+            <h3>¿Querés involucrarte?</h3>
+            <p>
+                Sumate a campañas ambientales, compartí consejos y ayudá a crear conciencia.
+            </p>
+            <button class="campaign-button">
+                Quiero participar
+            </button>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>
+            © 2026 Planeta Azul - Cuidemos el agua juntos
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef8ff;
+    color: #1b1b1b;
+    line-height: 1.6;
+}
+
+
+/* HERO */
+
+.hero {
+    height: 90vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 102, 204, 0.6),
+            rgba(0, 51, 102, 0.7)
+        ),
+        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400&auto=format&fit=crop');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+
+.overlay {
+    padding: 2rem;
+}
+
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+
+.hero-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: #0066cc;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.hero-button:hover {
+    transform: scale(1.05);
+}
+
+
+/* SECCIONES */
+
+section {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+
+section h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    color: #0066cc;
+}
+
+
+section h3 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #0055aa;
+}
+
+
+section p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+/* TARJETAS */
+
+.cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.card h3 {
+    font-size: 2rem;
+    color: #0099ff;
+    margin-bottom: 1rem;
+}
+
+
+/* LISTA */
+
+.tips {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+
+.tips li {
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    list-style: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+/* CALCULADORA */
+
+.calculadora {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.calculadora label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+
+.calculadora input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid #cdd9e5;
+    margin-bottom: 1rem;
+}
+
+
+.calculadora button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #0099ff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.calculadora button:hover {
+    background-color: #0077cc;
+}
+
+
+#resultado {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #0066cc;
+}
+
+
+/* RECURSOS */
+
+.resource-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.campaign-button {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 40px;
+    background-color: #0066cc;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+
+.campaign-button:hover {
+    background-color: #004c99;
+    transform: scale(1.05);
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 4rem;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
