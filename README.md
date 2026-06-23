@@ -1,4 +1,4 @@
-# Curso de Programación Asistida con IA - Chicas en Tecnología 🚀
+# aaaaa de Programación Asistida con IA - Chicas en Tecnología 🚀
 
 En este repositorio, incluiremos distintos ejemplos de proyectos generados con IA y modificados a nuestro gusto, con temáticas basadas en los *Objetivos de Desarrollo Sostenible*[^1]. A continuación dejaremos algunos tips a tener en cuenta en distintos momentos del desarrollo de sus proyectos.
 
