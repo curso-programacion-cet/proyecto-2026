@@ -1,24 +1,33 @@
+function traerValorInput(id) {
+    const input = parseInt(document.getElementById(id).value) || 0;
+    return input;
+}
+
+
 function calcularAhorro() {
 
     // Traer valores de los inputs del HTML
-    const vecesCepilladoDientes = parseInt(document.getElementById('cepillar-dientes').value) || 0;
+    
+    const vecesCepilladoDientes = traerValorInput('cepillar-dientes');
+    const vecesLavadoPlatos = traerValorInput('lavar-platos');
+    const minutosDucha = traerValorInput('ducha');
+    const vecesRegarPlantas = traerValorInput('regar-las-plantas');
 
-    const vecesLavadoPlatos = parseInt(document.getElementById('lavar-platos').value) || 0;
-
-    const minutosDucha = parseInt(document.getElementById('ducha').value) || 0;
-
+    console.log("Valores obtenidos: cepillado: " + vecesCepilladoDientes + ", lavado: " + vecesLavadoPlatos + ", ducha: " + minutosDucha + ", regar: " + vecesRegarPlantas);    
 
     // Asumimos cuánto ahorramos (litros ahorrados por acción)
     const ahorroCepilladoPorVez = 6;
     const ahorroLavadoPorVez = 10;
     const ahorroDuchaPorMinuto = 5;
+    const ahorroRegarPlantasPorVez = 15;
 
 
     // Calculamos ahorro total
     const ahorroTotal =
         (vecesCepilladoDientes * ahorroCepilladoPorVez) +
         (vecesLavadoPlatos * ahorroLavadoPorVez) +
-        (minutosDucha * ahorroDuchaPorMinuto);
+        (minutosDucha * ahorroDuchaPorMinuto) +
+        (vecesRegarPlantas * ahorroRegarPlantasPorVez);
 
 
     // Mostramos resultado
