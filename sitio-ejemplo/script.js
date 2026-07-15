@@ -39,3 +39,15 @@ function calcularAhorro() {
 
     elementoResultado.style.display = 'block';
 }
+
+
+let btnParticipar = document.getElementById('boton-participar');
+
+btnParticipar.addEventListener('click', function (evento) {
+    console.log(evento);
+    alert("¡Gracias por unirte a nuestra campaña ambiental!");
+    btnParticipar.style.backgroundColor = "green";
+});
+
+
+
